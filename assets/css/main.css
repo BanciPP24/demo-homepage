@@ -1451,6 +1451,7 @@ section {
   margin-bottom: 15px;
   font-size: 20px;
   color: #555555;
+  background-color:var(--color-primary) ;
   text-align: center;
 }
 
@@ -1480,7 +1481,7 @@ section {
   height: 86px;
   width: 86px;
   border-radius: 50%;
-  background: #87c1bb;
+  background: var(--color-primary);
   transition: all 0.3s ease-out 0s;
   transform: translateZ(-1px);
 }
@@ -1491,7 +1492,7 @@ section {
   height: 102px;
   width: 102px;
   border-radius: 50%;
-  background: #d2eeeb;
+  background: var(--color-primary);
   transition: all 0.3s ease-out 0s;
   transform: translateZ(-2px);
 }
@@ -1567,7 +1568,7 @@ section {
 
 .pricing .featured {
   z-index: 10;
-  border: 3px solid var(--color-primary);
+  border: 1px solid #E3EFE6;
 }
 
 @media (min-width: 992px) {
@@ -2126,6 +2127,117 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Pricing
+--------------------------------------------------------------*/
+.pricing .box {
+  padding: 20px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing h3 {
+  font-weight: 400;
+  margin: -20px -20px 20px -20px;
+  padding: 20px 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #777777;
+  background: #f8f8f8;
+}
+
+.pricing h4 {
+  font-size: 36px;
+  color: #3fbbc0;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+
+.pricing h4 sup {
+  font-size: 20px;
+  top: -15px;
+  left: -3px;
+}
+
+.pricing h4 span {
+  color: #bababa;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.pricing ul {
+  padding: 0;
+  list-style: none;
+  color: #444444;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.pricing ul li {
+  padding-bottom: 16px;
+}
+
+.pricing ul i {
+  color: #a5c0ac;
+  font-size: 18px;
+  padding-right: 4px;
+}
+
+.pricing ul .na {
+  color: #ccc;
+  text-decoration: line-through;
+}
+
+.pricing .btn-wrap {
+  margin: 20px -20px -20px -20px;
+  padding: 20px 15px;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+.pricing .btn-buy {
+  background:#E3EFE6;
+  display: inline-block;
+  padding: 8px 35px 10px 35px;
+  border-radius: 4px;
+  color: #fff;
+  transition: none;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.pricing .btn-buy:hover {
+  background: #E3EFE6;
+}
+
+.pricing .featured h3 {
+  color: var(--color-primary);
+  background: #E3EFE6;
+}
+
+.pricing .advanced {
+  width: 200px;
+  position: absolute;
+  top: 18px;
+  right: -68px;
+  transform: rotate(45deg);
+  z-index: 1;
+  font-size: 14px;
+  padding: 1px 0 3px 0;
+  background: #E3EFE6;
+  color: #fff;
+}
+
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .footer {
@@ -2156,7 +2268,7 @@ section {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: black;
+  color: rgb(255, 255, 255);
   font-family: var(--font-secondary);
   margin-top: 3px;
 }
@@ -2175,13 +2287,14 @@ section {
   width: 32px;
   height: 32px;
   color:  #E3EFE6;
-  margin-right: 10px;
+  margin-left: 10px;
+  margin-right: 20px;
   transition: 0.3s;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--color-primary);
-  color: #fff;
+  color: #ffffff;
   border-radius: 50px;
 }
 
@@ -2260,6 +2373,7 @@ section {
   font-size: 15px;
   margin-right: 20px;
 }
+
 .footer .footer-legal .credits {
   padding-top: 4px;
   text-align: center;
