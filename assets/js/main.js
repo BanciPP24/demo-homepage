@@ -127,6 +127,19 @@ document.addEventListener('DOMContentLoaded', () => {
     selector: '.glightbox'
   });
 
+/**
+   * Skills animation
+   */
+  const skills = document.querySelectorAll('#skills .progress');
+
+  skills.forEach(skill => {
+    const value = skill.querySelector('.val').getAttribute('data-value');
+    const progressBar = skill.querySelector('.progress-bar');
+
+    progressBar.style.width = `${value}%`;
+    progressBar.setAttribute('aria-valuenow', value);
+  });
+
   /**
    * Scroll top button
    */

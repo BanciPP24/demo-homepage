@@ -600,11 +600,11 @@ section {
     z-index: 9996;
   }
 }
-
 /*--------------------------------------------------------------
 # Featured Services
 --------------------------------------------------------------*/
-.featured-services .card {
+.featured-services .icon-box {
+  padding: 100px;
   position: relative;
   overflow: hidden;
   background: #fff;
@@ -613,19 +613,34 @@ section {
   border-radius: 8px;
   z-index: 1;
 }
-.featured-services .card-overlay {
+
+.featured-services .icon-box::before {
+  content: "";
   position: absolute;
-  top: 0;
+  background: #d9f1f2;
+  right: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  bottom: 0;
+  top: 100%;
+  transition: all 0.3s;
+  z-index: -1;
 }
 
-.featured-services .card:hover .card-overlay {
-  opacity: 1;
+.featured-services .icon-box:hover::before {
+  background: #298D64;
+  top: 0;
+  border-radius: 0px;
+}
+
+.featured-services .icon {
+  margin-bottom: 15px;
+}
+
+.featured-services .icon i {
+  font-size: 48px;
+  line-height: 1;
+  color: #298D64;
+  transition: all 0.3s ease-in-out;
 }
 
 .featured-services .title {
@@ -644,10 +659,19 @@ section {
   margin-bottom: 0;
 }
 
+.featured-services .icon-box:hover .title a,
+.featured-services .icon-box:hover .description {
+  color: #fff;
+}
+
+.featured-services .icon-box:hover .icon i {
+  color: #fff;
+}
 .row{
     align-items: center;
   justify-content: center;
 }
+
 /*--------------------------------------------------------------
 # About Us Section
 --------------------------------------------------------------*/
@@ -1221,23 +1245,138 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Contact Section
+# Section
 --------------------------------------------------------------*/
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.skills .progress .skill {
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #222222;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: #e2eefd;
+  height: 10px;
+}
+
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #298d64;
+}
+
+
+.skills .count-box {
+  padding: 30px 30px 25px 30px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  background: #ffffff;
+}
+
+.skills .count-box i {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  background: #298d64;
+  color: #fff;
+  width: 56px;
+  height: 56px;
+  line-height: 0;
+  border-radius: 50px;
+  border: 5px solid #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills .progress span {
+  font-size: 16px;
+  display: block;
+  font-weight: 600;
+  color: #000000;
+}
+
+.skills .count-box span {
+  font-size: 40px;
+  display: block;
+  font-weight: 600;
+  color: #000000;
+}
+
+.skills .count-box p {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 23px;
+  color: #298d64;
+}
+
+/*--------------------------------------------------------------
+# Produk Banci
+--------------------------------------------------------------*/
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.contact .row {
+  flex: 1;
+}
+
+.contact .col-lg-8 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact .col-lg-8 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.contact .col-lg-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .contact .info-container {
   background-color: #ffffff;
-  height: 100%;
   padding: 20px;
   border-radius: 0px;
+  height: 100%;
 }
 
 .contact .info-item {
   width: 100%;
-  background-color:#E3EFE6;
+  background-color: #E3EFE6;
   margin-bottom: 20px;
   padding: 20px;
   margin-left: 30px;
   border-radius: 0px;
   color: #E3EFE6;
+  flex: 1;
 }
 
 .contact .info-item i {
@@ -1245,7 +1384,7 @@ section {
   color: #fff;
   float: left;
   width: 44px;
-  height: 44px;
+  height: 39px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1282,7 +1421,6 @@ section {
     transform: rotate(360deg);
   }
 }
-
 /*--------------------------------------------------------------
 # News Tikcer
 --------------------------------------------------------------*/
