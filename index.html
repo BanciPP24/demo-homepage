@@ -1,368 +1,543 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--Tailswinds link-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"  rel="stylesheet" />
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="./assets/css/chat.css">
+  
+  <title>Banci Pertanian 2024</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-  </head>
-  <body>
-    <!--Atas navbr-->
-    <nav class="bg-white border-gray-200 dark:bg-gray-900">
-        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-2 md:px-6 py-2.5">
-            <div class="flex items-center">
-                <a href="" class="mr-6 text-sm font-medium text-gray-500 dark:text-white hover:underline">Maklum Balas</a>
-                <a href="" class="mr-6 text-sm font-medium text-gray-500 dark:text-white hover:underline">Soalan Lazim</a>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-            </div>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Impact
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <section id="topbar" class="topbar d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-question-diamond-fill d-flex align-items-center"><a href="#">Soalan Lazim</a></i>
+        <i class="bi bi-chat-left-text-fill d-flex align-items-center ms-4"><a href="#">Maklum Balas</a></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="#" class="twitter"> BAHASA </i></a>
+        <a href="#" class="facebook">| ENGLISH </i></a>
+      </div>
+    </div>
+  </section><!-- End Top Bar -->
+
+  <!--Navbar-->
+  <header id="header" class="header d-flex align-items-center">
+
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <!--Logo kat sini-->
+        <img src="https://www.kln.gov.my/documents/34163/0/jata-negara-png-9.png/ba77de32-be4f-4c55-a873-a46f71c49b0c?version=1.0&t=1584314327000" style="margin-right: 10px;" width="55" height="55" class="d-inline-block align-middle" alt="Malaysia's National Coat of Arms">
+        <div class="ml-2 font-weight-normal">
+          <span class="d-block">Kementerian Ekonomi</span>
+          <span class="d-block">Jabatan Perangkaan Malaysia</span>
         </div>
-    </nav>
+      </a>
 
-    <!--Navbar-->
-    
-    <nav class="px-2 bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
-        <div class="container flex flex-wrap items-center justify-between mx-auto">
-          <a href="#" class="flex items-center">
-              <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-10" alt="Flowbite Logo" />
-              <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Kementerian Ekonomi <p> Jabatan Perangkaan Malaysia</p></span>
-          </a>
-          <button data-collapse-toggle="navbar-multi-level" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-multi-level" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-          </button>
+      <!--Navbar Kanan-->
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#hero">Utama</a></li>
+          <li class="dropdown"><a href="#"><span>Info Banci</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Perutusan Pesuruhanjaya Banci</a></li>
 
-          <!--Navbar belah Kanan-->
-          <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
-            <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            
-            <!--Utaman-->
-                <li>
-                <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Utama</a>
-                </li>
-
-            <!--Info Banci-->
-                <li>
-                  <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Info Banci<svg class="w-4 h-4 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
-                  <!-- Dropdown menu -->
-                  <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                      <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                        
-                        <!--Perutusan Banci-->
-                        <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Perutusan Banci oleh Persuruhjaya Banci</a>
-                        </li>
-
-                        <!--Mengenal Banci-->
-                        <li aria-labelledby="dropdownNavbarLink">
-                          <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mengenal Banci<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></button>
-                          <div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
-                                <li>
-                                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Pegenalan dan Info</a>
-                                </li>
-                                <li>
-                                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Kenali Pembanci Anda</a>
-                                </li>
-                                <li>
-                                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Kamus Pertanian</a>
-                                </li>
-                              </ul>
-                          </div>
-                        </li>
-
-                        <!--Metadologi-->
-                        <li aria-labelledby="dropdownNavbarLink">
-                            <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Metadologi<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></button>
-                            <div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton1">
-                                  <li>
-                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Skop & Liputan</a>
-                                  </li>
-                                  <li>
-                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Kaedah Pengumpulan Data</a>
-                                  </li>
-                                  <li>
-                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Tempoh Rujukan</a>
-                                  </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <!--Sejarah Banci-->
-                        <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sejarah Banci</a>
-                        </li>
-
-                        <!--Akta-->
-                        <li aria-labelledby="dropdownNavbarLink">
-                            <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Akta<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></button>
-                            <div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
-                                  <li>
-                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Akta Banci</a>
-                                  </li>
-                                  <li>
-                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Akta Perangkaan</a>
-                                  </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <!--Organisasi-->
-                        <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Organisasi</a>
-                        </li>
-
-                        <!--SOP Pembanci-->
-                        <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">SOP Pembanci / Manual</a>
-                        </li>
-
-                        <!--Soal selidik-->
-                        <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Soal Selidik</a>
-                        </li>
-
-                        <!--Logo-->
-                        <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Logo & Selidik</a>
-                        </li>
-
-                        <!--Aspirasi Banci-->
-                        <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Aspirasi Banci</a>
-                        </li>
-
-                        <!--Highlight-->
-                        <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Highlight of Banci Pertanian & Pembalakan 2024 (Progress)</a>
-                        </li>
-
-                      </ul>
-                  </div>
-                </li>
-
-            <!--Media-->
-                <li>
-                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Media<svg class="w-4 h-4 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
-                <!-- Dropdown menu -->
-                <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                      
-                      <!--Perutusan Banci-->
-                      <li>
-                          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Perutusan Banci oleh Persuruhjaya Banci</a>
-                      </li>
-
-                      <!--Mengenal Banci-->
-                      <li aria-labelledby="dropdownNavbarLink">
-                        <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Menganal Banci<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></button>
-                        <div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
-                              <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Pegenalan dan Info</a>
-                              </li>
-                              <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Kenali Pembanci Anda</a>
-                              </li>
-                              <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Kamus Pertanian</a>
-                              </li>
-                            </ul>
-                        </div>
-                      </li>
-                      <!--Mengenal Banci-->
-                      <li aria-labelledby="dropdownNavbarLink">
-                          <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Metadologi<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></button>
-                          <div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton1">
-                                <li>
-                                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Skop & Liputan</a>
-                                </li>
-                                <li>
-                                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Kaedah Pengumpulan Data</a>
-                                </li>
-                                <li>
-                                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Tempoh Rujukan</a>
-                                </li>
-                              </ul>
-                          </div>
-                        </li>
-
-                    </ul>
-                    <div class="py-1">
-                      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign out</a>
-                    </div>
-                </div>
-                </li>
-
-            <!--Hubungi Kami-->
-                <li>
-                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Hubung Kami<svg class="w-4 h-4 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
-                <!-- Dropdown menu -->
-                <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                      
-                      <!--Perutusan Banci-->
-                      <li>
-                          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Perutusan Banci oleh Persuruhjaya Banci</a>
-                      </li>
-
-                      <!--Mengenal Banci-->
-                      <li aria-labelledby="dropdownNavbarLink">
-                        <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Menganal Banci<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></button>
-                        <div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
-                              <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Pegenalan dan Info</a>
-                              </li>
-                              <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Kenali Pembanci Anda</a>
-                              </li>
-                              <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Kamus Pertanian</a>
-                              </li>
-                            </ul>
-                        </div>
-                      </li>
-                      <!--Mengenal Banci-->
-                      <li aria-labelledby="dropdownNavbarLink">
-                          <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Metadologi<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></button>
-                          <div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton1">
-                                <li>
-                                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Skop & Liputan</a>
-                                </li>
-                                <li>
-                                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Kaedah Pengumpulan Data</a>
-                                </li>
-                                <li>
-                                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Tempoh Rujukan</a>
-                                </li>
-                              </ul>
-                          </div>
-                        </li>
-
-                    </ul>
-                    <div class="py-1">
-                      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign out</a>
-                    </div>
-                </div>
-                </li>
-
-            <!--Produk Banci-->
-                <li>
-                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Produk Banci<svg class="w-4 h-4 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
-                <!-- Dropdown menu -->
-                <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                      
-                      <!--Perutusan Banci-->
-                      <li>
-                          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Perutusan Banci oleh Persuruhjaya Banci</a>
-                      </li>
-
-                      <!--Mengenal Banci-->
-                      <li aria-labelledby="dropdownNavbarLink">
-                        <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Menganal Banci<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></button>
-                        <div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
-                              <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Pegenalan dan Info</a>
-                              </li>
-                              <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Kenali Pembanci Anda</a>
-                              </li>
-                              <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Kamus Pertanian</a>
-                              </li>
-                            </ul>
-                        </div>
-                      </li>
-                      <!--Mengenal Banci-->
-                      <li aria-labelledby="dropdownNavbarLink">
-                          <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Metadologi<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></button>
-                          <div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton1">
-                                <li>
-                                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Skop & Liputan</a>
-                                </li>
-                                <li>
-                                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Kaedah Pengumpulan Data</a>
-                                </li>
-                                <li>
-                                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Tempoh Rujukan</a>
-                                </li>
-                              </ul>
-                          </div>
-                        </li>
-
-                    </ul>
-                    <div class="py-1">
-                      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign out</a>
-                    </div>
-                </div>
-                </li>    
-            
+              <li class="dropdown"><a href="#"><span>Mengenai Banci</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Pengenalan dan Info</a></li>
+                  <li><a href="#">Pesuruhanjaya Banci</a></li>
+                  <li><a href="#">Kenali Pembanci Anda</a></li>
+                  <li><a href="#">Kamus Pertanian</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Metodologi</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Skop dan Liputan</a></li>
+                  <li><a href="#">Kaedah Pengumpulan Data</a></li>
+                  <li><a href="#">Tempoh Rujukan</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Sejarah Banci</a></li>
+              <li class="dropdown"><a href="#"><span>Akta</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Akta Banci</a></li>
+                  <li><a href="#">Akta Perangkaan</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Organisasi</a></li>
+              <li><a href="#">Manual</a></li>
+              <li><a href="#">Soal Selidik</a></li>
+              <li><a href="#">Logo & Slogan</a></li>
+              <li><a href="#">Aspirasi Banci</a></li>
+              <li><a href="#">Highlight of Banci Pertanian 2024</a></li>
             </ul>
+          </li>
+          
+          <li class="dropdown"><a href="#"><span>Media</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Gambar</a></li>
+              <li><a href="#">Video</a></li>
+              <li><a href="#">Berita dan Artikel</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a href="#"><span>Produk Banci</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Penerbitan</a></li>
+              <li><a href="#">Tema</a></li>
+              <li><a href="#">Infografik</a></li>
+              <li><a href="#">Newsletter</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </nav>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 4"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active c-item">
+        <img src="assets/img/banner/1.png" class="d-block w-100 c-img" alt="Slide 1">
+      </div>
+      <div class="carousel-item active c-item">
+        <img src="assets/img/banner/2.png" class="d-block w-100 c-img" alt="Slide 1">
+      </div>
+      <div class="carousel-item c-item">
+        <img src="assets/img/banner/3.png" class="d-block w-100 c-img" alt="Slide 2">
+      </div>
+      <div class="carousel-item c-item">
+        <img src="assets/img/banner/4.png" class="d-block w-100 c-img" alt="Slide 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--News Ticker-->
+  <div class="row g-0">
+    <div class="col-sm-6 col-md-2">
+    <div class="berita">Berita Semasa</div>
+    </div>
+
+    <!--News yg gerak ii tu-->
+    <div class="col-6 col-md-10">
+      <div class="hwrap">
+        <div class="hmove">
+          <div class="hitem">Banci Pertanian 2024 akan dilaksanakan..</div>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- ======= Section ======= -->
+  <div class="section-header"><br><br><br>
+    <h2>Terkini Status Banci</h2>
+    <p><a href="#">Lebih Banyak Maklumat Status Banci  </a></p>
+  </div>
+  <section id="skills" class="skills">
+    <div class="container" data-aos="fade-up">
+      <!--  Counts Section -->
+      <div class="row">
+
+        <div class="col">
+          <div class="count-box">
+            <p>Lengkap Banci <strong>Isi Rumah</strong></p>
+            <span data-purecounter-start="0" data-purecounter-end="14500" data-purecounter-duration="1" class="purecounter"></span>
           </div>
         </div>
-      </nav>
-  
-    <!--Slide (Carousel)-->
-  <br><br>
-<div id="indicators-carousel" class="relative w-full" data-carousel="static">
-  <!-- Carousel wrapper -->
-  <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-       <!-- Item 1 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-          <img src="img/2.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+
+        <div class="col">
+          <div class="count-box">
+            <p>Lengkap Banci <strong>Perusahaan</strong></p>
+            <span data-purecounter-start="0" data-purecounter-end="5500" data-purecounter-duration="1" class="purecounter"></span>
+          </div>
+        </div>
+
       </div>
-      <!-- Item 2 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="img/3.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      <br>
+      <!-- End Counts Section -->
+       <div class="row skills-content">
+
+      <div class="col-lg-6">
+        <div class="progress">
+          <span class="skill"> <i class="val" data-value="38">38%</i></span><br>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
       </div>
-      <!-- Item 3 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="img/4.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+
+      <div class="col-lg-6">
+        <div class="progress">
+          <span class="skill"> <i class="val" data-value="25">25%</i></span><br>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
       </div>
-      <!-- Item 4 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="img/banner 5 portal.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+
+    </div>
+  </section><!-- End Section -->
+
+
+<!-- ======= produk Banci ======= -->
+<section id="contact" class="contact">
+  <div class="container" data-aos="fade-up">
+
+    <!--Dash-->
+
+    <div class="row gx-lg-0 gy-4 align-items-stretch">
+
+      <!--Belah Kiri-->
+      <div class="col-lg-8">
+        <a href="https://www.dosm.gov.my/AgriculturalAnalyticalSystem/"> 
+          <img src="assets/img/dashboard.png" class="d-block mw-100 c-img" alt="dashboard">
+        </a>
       </div>
+    
+      <!--Belah Kanan-->
+      <div class="col-lg-4">
+        <div class="info-container d-flex flex-column align-items-center justify-content-center">
+        
+          <!--Item 1-->
+          <div class="info-item d-flex">
+            <a href="#"><i class="bi bi-caret-right-fill"></i></a>
+            <a href="#"><h4>Pesuruhanjaya Banci Malaysia</h4></a>
+          </div>
+    
+          <!--Item 2-->
+          <div class="info-item d-flex">
+            <a href="#"><i class="bi bi-caret-right-fill"></i></a>
+            <a href="#"><h4>Info Banci</h4></a>
+          </div>
+    
+          <!--Item 3-->
+          <div class="info-item d-flex">
+            <a href="#"><i class="bi bi-caret-right-fill"></i></a>
+            <a href="#"><h4>Sejarah Banci</h4></a>
+          </div>
+    
+          <!--Item 4-->
+          <div class="info-item d-flex">
+            <a href="#"><i class="bi bi-caret-right-fill"></i></a>
+            <a href="#"><h4>Newsletter</h4></a>
+          </div>
+    
+          <!--Item 5-->
+          <div class="info-item d-flex">
+            <a href="#"><i class="bi bi-caret-right-fill"></i></a>
+            <a href="#"><h4>Infografik</h4></a>
+          </div>
+    
+          <a href="#"><h6>Selanjutnya</h6></a>
+    
+    
+        </div>
+    </div>
+    </div>
+</section>
+
+  <main id="main">
+    <!-- ======= Sorotan Banci Pertanian dan Pembalakan ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Sorotan Banci Pertanian </h2>
+          <p><a href="#">Lebih Banyak Berita dan Acara  </a></p>
+        </div>
+
+        <div class="row g-0" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-m-2 slides  position-relative">
+
+            <div class="slides-1 swiper">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <!--slider news 1-->
+                    <div class="row">
+                      <div class="col">
+                        <img src="assets/img/media/kp-img.png" class="d-block w-100 c-img" alt="Slide 1">
+                      </div>
+                      <div class="col">
+                        <h3 class="mb-3">Lorem ipsum dolor sit amet</h3>
+                        <i class="bi bi-calendar-event"></i><a href="#"> 10 Dec 2023</a></i><br><br>
+                        <p>Dolorem quia fuga consectetur voluptatem. Earum consequatur nulla maxime necessitatibus cum accusamus. Voluptatem dolorem ut numquam dolorum delectus autem veritatis facilis. Et ea ut repellat ea. Facere est dolores fugiat dolor.</p>
+                        <br><br><div class="text-center position-relative"><a href="" class="btn-get-started">Maklumat Lanjut </a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End slide item 1 -->
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <!--slider news 2-->
+                    <div class="row">
+                      <div class="col">
+                        <img src="assets/img/media/d2-va.JPG" class="d-block w-100 c-img" alt="Slide 1">
+                      </div>
+                      <div class="col">
+                        <h3 class="mb-3">Unde perspiciatis ut repellat dolorem</h3>
+                        <i class="bi bi-calendar-event"></i><a href="#"> 29 Dec 2023</a></i><br><br>
+                        <p>Dolorem quia fuga consectetur voluptatem. Earum consequatur nulla maxime necessitatibus cum accusamus. Voluptatem dolorem ut numquam dolorum delectus autem veritatis facilis. Et ea ut repellat ea. Facere est dolores fugiat dolor.</p>
+                        <br><br><div class="text-center position-relative"><a href="" class="btn-get-started">Maklumat Lanjut </a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End slide item 2 -->
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <!--slider news 3-->
+                    <div class="row">
+                      <div class="col">
+                        <img src="assets/img/media/d1-va.JPG" class="d-block w-100 c-img" alt="Slide 1">
+                      </div>
+                      <div class="col">
+                        <h3 class="mb-3">Let's grow your business together</h3> 
+                        <i class="bi bi-calendar-event"></i><a href="#"> 13 Jun 2024</a></i><br><br>
+                        <p>Dolorem quia fuga consectetur voluptatem. Earum consequatur nulla maxime necessitatibus cum accusamus. Voluptatem dolorem ut numquam dolorum delectus autem veritatis facilis. Et ea ut repellat ea. Facere est dolores fugiat dolor.</p>
+                        <br><br><div class="text-center position-relative"><a href="" class="btn-get-started">Maklumat Lanjut </a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End slide item 3 -->
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Sorotan Banci Pertanian dan Pembalakan -->
+  </main><!-- End #main -->
+<br><br>
+    <!-- ======= Media Social Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Media Sosial</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 mt-3 mt-md-0">
+            <div class="box featured" data-aos="fade-up" data-aos-delay="200">
+              <h3>Facebook</h3>
+              <img src="assets/img/media/fb.png" alt="fb"/>
+              <div class="btn-wrap">
+                <p><a href="#">Lebih Banyak Facebook post  </a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-3 mt-md-0">
+            <div class="box featured" data-aos="fade-up" data-aos-delay="200">
+              <h3>Twitter</h3>
+              <img src="assets/img/media/twt.png" alt="twt"/><br><br>
+              <div class="btn-wrap">
+                <p><a href="#">Lebih Banyak Twitter post  </a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-3 mt-md-0">
+            <div class="box featured" data-aos="fade-up" data-aos-delay="200">
+              <h3>Instagram</h3>
+              <img src="assets/img/media/ig.png" alt="ig"/><br><br>
+              <div class="btn-wrap">
+                <p><a href="#">Lebih Banyak Instagram post  </a></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Media Social Section -->
+<br><br>
+
+ <!-- ======= Footer ======= -->
+ <footer id="footer" class="footer">
+
+  <div class="footer-content">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-7 footer-info">
+          <h4 style="color: black;">BANCI PERTANIAN 2024</h4>
+          <img src="assets/img/qr.jpeg" alt="DOSM" style="width:180px;height:180px;" class="center">
+          <div class="social-links d-flex  mt-3">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6 footer-links">
+          <h4>Hubungi Kami</h4>
+          <ul>
+            <li><i class="bi bi-geo-alt-fill" style="margin-right: 10px;"></i> 
+              <a>
+               Jabatan Perangkaan Malaysia, <br><br>
+               Blok C6 & C7, Kompleks C,<br><br>
+               62514 Presint 1, <br><br></a>
+            </li>
+            <li><i class="bi bi-envelope-fill" style="margin-right: 10px;"></i><a href="mailto:sekretariatac2024@dosm.gov.my"> sekretariatac2024@dosm.gov.my</a></li>
+            <li><i class="bi bi-telephone-fill" style="margin-right: 10px;"></i><a> 03-8885 7000</a></li>
+            <li><i class="fa fa-fax" style="font-size:18px;margin-right: 10px;"></i><a> 03-8888 9248</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-6 footer-links">
+          <h4>Kerjasama Agensi</h4>
+          <ul>
+            <li><i class="bi bi-caret-right"></i><a href="#">Kementerian Pertanian dan Keterjaminan Makanan</a></li>
+            <li><i class="bi bi-caret-right"></i> <a href="#">Kementerian Kemajuan Desa dan Wilayah</a></li>
+            <li><i class="bi bi-caret-right"></i> <a href="#">Kementerian Perladangan dan Komoditi</a></li>
+            <li><i class="bi bi-caret-right"></i> <a href="#">Kementerian Sumber Asli, Alam Sekitar dan Perubahan Iklim</a></li>
+            <li><i class="bi bi-three-dots"></i> <a href="#">Selanjutnya</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-7 footer-contact text-center text-md-start">
+          <h4 style="margin-left: 10%;"> Statistik Pelawat</h4>
+          <ul>
+            <i class="bi bi-dash"></i><a>Hari Ini : 54</a><br><br>
+            <i class="bi bi-dash"></i><a>Minggu Ini : 496</a><br><br>
+            <i class="bi bi-dash"></i><a>Bulan Ini : 651</a><br><br>
+            <i class="bi bi-dash"></i><a>Tahun Ini : 1,363</a><br><br>
+            <i class="bi bi-dash"></i><a>Jumlah : 1,293,168</a>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
-  <!-- Slider indicators -->
-  <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+
+  <div class="footer-legal">
+    <div class="container" style="color: aliceblue">
+      <i class="bi bi-dot"></i><a href="#">Penafian</a><i class="bi bi-dot"></i>
+        <a href="#">Dasar Privasi  </a><i class="bi bi-dot"></i>
+        <a href="#">Dasar Keselamatan</a><i class="bi bi-dot"></i>
+        <a href="#">Perlindungan Data Peribadi </a><i class="bi bi-dot"></i>
+        <a href="#">Soalan Lazim</a>
+        <br><br>
+      <div class="copyright">
+        Hakcipta Terpelihara &copy; 2023 Banci Pertanian.
+      </div>
+
+    </div>
   </div>
-  <!-- Slider controls -->
-  <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-      <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-          <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-          <span class="sr-only">Previous</span>
-      </span>
-  </button>
-  <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-      <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-          <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-          <span class="sr-only">Next</span>
-      </span>
-  </button>
-</div>
+</footer><!-- End Footer -->
 
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+ <!-- ======= chatbot ======= -->
+    <div class="chat-container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header" >
+                <div class="chatbox__content--header" style="text-align: left">
+                    <h4 class="chatbox__heading--header" >ChatBot Portal</h4>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div>
+                    <p style="text-align: center; margin-bottom: 100px;">Hi, I am ChatBot. Please submit your question about the portal and I will try to get answers from online knowledge stores.</p>
+                </div>
+            </div>
+            <div class="chatbox__footer">
+                <center><p style="text-align: center;font-size: 14px;">Click The button below to interact with the DOSM chatbot</p>
+                <button type="button" class="btn btn-secondary" style="margin-bottom: 5px;">Proceed..</button></center>
+            </div>
+        </div>
+        <div class="chatbox__button">
+          <button id="scroll-top-button">button</button>
+        </div>
+    </div>
+    </div>
+    <script src="./assets/js/chat.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </div>
+<!-- End chatbot -->
 
+  <div id="preloader"></div>
 
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
 
-    <!--Tailswinds-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
-   
-  </body>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+</body>
+
 </html>
