@@ -185,7 +185,8 @@ section {
 .scroll-top.active {
   visibility: visible;
   opacity: 1;
-  bottom: 15px;
+  right: 33px;
+  bottom: 90px;
 }
 
 /*--------------------------------------------------------------

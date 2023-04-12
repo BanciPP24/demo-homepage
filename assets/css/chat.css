@@ -15,7 +15,7 @@
 
 #chatbox.active {
     transform: translateX(0);
-    bottom: 15px;
+    bottom: 100px;
   }
 
 /* CONTENT IS CLOSE */
@@ -24,6 +24,7 @@
     flex-direction: column;
     background: #eee;
     width: 300px;
+    bottom: 100px;
     height: 350px;
     z-index: -123456;
     opacity: 0;
