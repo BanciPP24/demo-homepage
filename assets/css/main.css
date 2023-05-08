@@ -1249,7 +1249,7 @@ section {
 # Section
 --------------------------------------------------------------*/
 .skills .progress {
-  height: 60px;
+  height: 40px;
   display: block;
   background: none;
   border-radius: 0;
@@ -1272,19 +1272,19 @@ section {
 
 .skills .progress-bar-wrap {
   background: #e2eefd;
-  height: 10px;
+  height: 30px;
 }
 
 .skills .progress-bar {
-  width: 1px;
-  height: 10px;
+  width: 10px;
+  height: 30px;
   transition: 0.9s;
   background-color: #298d64;
 }
 
 
 .skills .count-box {
-  padding: 30px 30px 25px 30px;
+  padding: 20px 20px 1px 20px;
   width: 100%;
   position: relative;
   text-align: center;
